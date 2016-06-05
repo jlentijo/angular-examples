@@ -17,9 +17,9 @@
       component: 'modalUi',
       useAsDefault: true
     }, {
-      path: '/messages',
-      name: 'MessageListUi',
-      component: 'messageListUi'
+      path: '/messages/...',
+      name: 'MessageUi',
+      component: 'messageUi'
     }]
   };
 

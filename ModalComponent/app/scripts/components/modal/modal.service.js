@@ -13,8 +13,11 @@
       modal.element.modal('show');
     };
 
-    modal.closeModal = function() {
+    modal.closeModal = function(callback) {
       modal.element.modal('hide');
+      modal.element.on('hidden.bs.modal', function() {
+        if(callback) callback();
+      });
     };
 
     return modal;

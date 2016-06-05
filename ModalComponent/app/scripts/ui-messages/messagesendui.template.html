@@ -1,0 +1,23 @@
+<custom-modal id="saveMessageModal" header="Message" ng-init="messageSend.openModal()">
+  <modal-body>
+    <form>
+      <div class="form-group">
+        <label for="inputFrom">From</label>
+        <input type="text" class="form-control" id="inputFrom" ng-model="messageSend.message.from" placeholder="From...">
+      </div>
+      <div class="form-group">
+        <label for="inputTo">To</label>
+        <input type="text" class="form-control" id="inputTo" ng-model="messageSend.message.to" placeholder="To...">
+      </div>
+      <div class="form-group">
+        <label for="inputText">Text</label>
+        <input type="text" class="form-control" id="inputText" ng-model="messageSend.message.text" placeholder="Message...">
+      </div>
+    </form>
+  </modal-body>
+  <modal-footer>
+    <button type="button" class="btn btn-default" ng-click="messageSend.closeModal()">Close</button>
+    <button type="button" class="btn btn-primary" ng-click="messageSend.saveMessage(messageSend.message)">
+      Save it!</button>
+  </modal-footer>
+</custom-modal>

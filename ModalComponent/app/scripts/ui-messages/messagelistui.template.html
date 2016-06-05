@@ -23,27 +23,4 @@
       Send message!</button>
   </div>
 </div>
-
-<custom-modal id="saveMessageModal" header="Message">
-  <modal-body>
-    <form>
-      <div class="form-group">
-        <label for="inputFrom">From</label>
-        <input type="text" class="form-control" id="inputFrom" ng-model="messageList.message.from" placeholder="From...">
-      </div>
-      <div class="form-group">
-        <label for="inputTo">To</label>
-        <input type="text" class="form-control" id="inputTo" ng-model="messageList.message.to" placeholder="To...">
-      </div>
-      <div class="form-group">
-        <label for="inputText">Text</label>
-        <input type="text" class="form-control" id="inputText" ng-model="messageList.message.text" placeholder="Message...">
-      </div>
-    </form>
-  </modal-body>
-  <modal-footer>
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    <button type="button" class="btn btn-primary" ng-click="messageList.saveMessage(messageList.message)">
-      Save it!</button>
-  </modal-footer>
-</custom-modal>
+<ng-outlet></ng-outlet>
