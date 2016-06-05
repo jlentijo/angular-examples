@@ -2,7 +2,7 @@
 // endbower
 
 body {
-  padding: 20px 0 0 0;
+  padding: 60px 0 0 0;
   margin: 0;
 }
 
@@ -15,26 +15,16 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+.btn {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-  
   /* Remove the padding we set earlier */
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-  
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }

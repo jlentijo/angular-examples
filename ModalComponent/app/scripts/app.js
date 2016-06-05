@@ -1,8 +1,9 @@
 'use strict';
 
-(function (angular) {
-  
-  angular.module('modalComponentApp', [])
-    .value('$routerRootComponent', 'modalApp');
-  
+(function(angular) {
+
+  angular.module('modalComponentApp', [
+    'ngComponentRouter'
+  ]).value('$routerRootComponent', 'modalApp');
+
 })(window.angular);

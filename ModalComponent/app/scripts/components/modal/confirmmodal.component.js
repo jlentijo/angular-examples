@@ -3,7 +3,7 @@
 (function(angular) {
 
   var confirmModal = {
-    templateUrl: 'views/confirmmodal.template.html',
+    templateUrl: 'scripts/components/modal/confirmmodal.template.html',
     controller: 'ModalController'
   };
 

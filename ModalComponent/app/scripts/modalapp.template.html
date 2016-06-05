@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ModalExample</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ng-class="{'active': $ctrl.navbar.modals.active}">
+          <a href="#modals">Generic Modals</a>
+        </li>
+        <li ng-class="{'active': $ctrl.navbar.messages.active}">
+          <a href="#messages">Custom modal</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Hello!!</h1>
+    <p>Example modal application with angular@1.5.6 Components.</p>
+    <p>Sharing data between components with service.</p>
+  </div>
+
+  <ng-outlet></ng-outlet>
+
+  <div class="footer">
+    <div class="text-right">
+      <p><span class="glyphicon glyphicon-wrench"></span> powered by @u26726</p>
+    </div>
+  </div>
+</div>

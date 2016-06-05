@@ -3,7 +3,7 @@
 (function(angular) {
 
   var infoModal = {
-    templateUrl: 'views/infomodal.template.html',
+    templateUrl: 'scripts/components/modal/infomodal.template.html',
     controller: 'ModalController'
   };
 

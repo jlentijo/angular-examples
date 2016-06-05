@@ -20,8 +20,8 @@
 
   <modal-app></modal-app>
   
-  <info-modal id="userInfoModal"></info-modal>
-	<confirm-modal id="userConfirmModal"></confirm-modal>
+  <info-modal id="infoModal"></info-modal>
+	<confirm-modal id="confirmModal"></confirm-modal>
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
@@ -30,15 +30,24 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
-
+  
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <script type="text/javascript" src="scripts/app.js"></script>
-  <script type="text/javascript" src="scripts/confirmmodal.component.js"></script>
-  <script type="text/javascript" src="scripts/infomodal.component.js"></script>
-  <script type="text/javascript" src="scripts/modal.controller.js"></script>
-  <script type="text/javascript" src="scripts/modal.service.js"></script>
   <script type="text/javascript" src="scripts/modalapp.component.js"></script>
-  <script type="text/javascript" src="scripts/modalapp.controller.js"></script>
+  
+  <script type="text/javascript" src="scripts/ui-messages/messagelistui.component.js"></script>
+  <script type="text/javascript" src="scripts/ui-messages/messagelistui.controller.js"></script>
+  
+  <script type="text/javascript" src="scripts/ui-modals/modalui.component.js"></script>
+  <script type="text/javascript" src="scripts/ui-modals/modalui.controller.js"></script>
+  
+  <script type="text/javascript" src="scripts/components/modal/confirmmodal.component.js"></script>
+  <script type="text/javascript" src="scripts/components/modal/custommodal.component.js"></script>
+  <script type="text/javascript" src="scripts/components/modal/infomodal.component.js"></script>
+  <script type="text/javascript" src="scripts/components/modal/modal.controller.js"></script>
+  <script type="text/javascript" src="scripts/components/modal/modal.service.js"></script>
+  
+  <script type="text/javascript" src="scripts/libs/angular_1_router.js"></script>
   <!-- endbuild -->
   
 </body>
