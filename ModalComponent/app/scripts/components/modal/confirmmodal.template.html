@@ -11,7 +11,7 @@
         <p>{{ $ctrl.config.body }}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-default" ng-click="$ctrl.closeModal()">No</button>
         <button type="button" class="btn btn-primary" ng-click="$ctrl.confirmAction()">Yes</button>
       </div>
     </div>

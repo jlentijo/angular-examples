@@ -6,8 +6,12 @@
     var vm = this;
     vm.config = ModalService.config;
     vm.confirmAction = function() {
+      ModalService.closeModal(function () {
+        vm.config.confirmCallback();
+      });
+    };
+    vm.closeModal = function () {
       ModalService.closeModal();
-      vm.config.callback();
     };
   }
 
